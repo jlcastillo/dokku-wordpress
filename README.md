@@ -75,7 +75,7 @@ Visit again https://api.wordpress.org/secret-key/1.1/salt to generate new secret
 
     cp wp-config.php WordPress
 
-## If creating a new project
+## If creating a new WordPress
 
 In your `local machine`, download the latest WordPress code, deleting the .git folder since we won't use the official repo afterwards.
 
