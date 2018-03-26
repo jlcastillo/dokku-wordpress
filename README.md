@@ -90,7 +90,7 @@ In your `local machine`, download the latest WordPress code, deleting the .git f
 
 3. Import your database into dokku with:
 
-    dokku mysql:import wp < database.sql
+        dokku mysql:import wp < database.sql
 
 ## First Deployment (for both cases)
 
