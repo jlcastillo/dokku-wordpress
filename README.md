@@ -172,7 +172,7 @@ From the wordpress dashboard (`http://yourdomain.com/wp-admin`)
 In your `local machine`:
 
     cd WordPress
-    git remote add origin `http://your_repo.com`
+    git remote add origin `https://myrepo.git`
     git pull
 
 You can now make local changes to files. You then push them to the dokku remote:
