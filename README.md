@@ -82,7 +82,7 @@ In your `local machine`, download the latest WordPress code, deleting the .git f
     git clone --depth 1 https://github.com/WordPress/WordPress.git
     rm -rf WordPress/.git
 
-## If migrating an existing project
+## If migrating an existing WordPress
 
 1. Copy all the files from your current project, including both the wp-core, wp-contents and everything else to a folder called `WordPress`
 
