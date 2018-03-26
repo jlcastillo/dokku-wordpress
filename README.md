@@ -155,6 +155,8 @@ If the command fails, please check:
 
 ## Setup Control Versioning
 
+**Warning:** this step is mandatory. Dokku relies on GIT projects, and control versioning also helps to restore files if we had problems with the backup plugin.
+
 From the wordpress dashboard (`http://yourdomain.com/wp-admin`)
 
 1. `SideMenu->Plugins->Add New->Search->"gitium"->Install->Activate`.
