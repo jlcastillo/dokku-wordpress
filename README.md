@@ -119,6 +119,8 @@ Create a `WordPress/.gitignore` file. You may start with these contents and acco
     wp-content/backup-db/
     wp-content/cache/
     wp-content/backups/
+    wp-content/uploads/
+    secret/
 
 Then proceed to 
 
