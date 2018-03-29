@@ -1,9 +1,7 @@
 .heroku/
-vendor/
 .profile.d/
 .composer/
 .builders_run
-Procfile
 .release
 *.log
 *.swp

@@ -92,6 +92,15 @@ In your `local machine`, download the latest WordPress code, deleting the .git f
 
         dokku mysql:import wp < database.sql
 
+4. You may want to assign a temporary subdomain to the migrated site while you test it (i.e. new_wp.domain.com). In this case, you will need to change a couple of rows in the database, otherwise the new one will redirect to the old one:
+
+        dokku mysql:connect wp
+        UPDATE `<table_prefix>options` SET `option_value` = 'http://new_wp.domain.com' WHERE `option_name` = 'siteurl';
+        UPDATE `<table_prefix>options` SET `option_value` = 'http://new_wp.domain.com' WHERE `option_name` = 'home';
+
+    Once you are satisfied with the migration don't forget to execute those commands again and make them point to the final site URL.
+
+
 ## First Deployment (for both cases)
 
 From your `local machine`:
@@ -99,11 +108,9 @@ From your `local machine`:
 Create a `WordPress/.gitignore` file. You may start with these contents and accomodate it to your specific needs:
 
     .heroku/
-    vendor/
     .profile.d/
     .composer/
     .builders_run
-    Procfile
     .release
     *.log
     *.swp
