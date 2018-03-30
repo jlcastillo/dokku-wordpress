@@ -1,8 +1,13 @@
 .heroku/
 .profile.d/
+vendor/
 .composer/
 .builders_run
+.bash_history
+Procfile
 .release
+composer.json
+.env
 *.log
 *.swp
 *.back
@@ -10,7 +15,6 @@
 *.sql
 *.sql.gz
 ~*
-.htaccess
 .maintenance
 wp-content/blogs.dir/
 wp-content/upgrade/
