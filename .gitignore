@@ -6,7 +6,6 @@ vendor/
 .bash_history
 Procfile
 .release
-composer.json
 .env
 *.log
 *.swp
