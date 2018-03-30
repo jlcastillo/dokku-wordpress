@@ -1,3 +1,0 @@
-[submodule "wp-contents/plugins/gitium"]
-	path = wp-contents/plugins/gitium
-	url = git@github.com:jlcastillo/gitium.git
