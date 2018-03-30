@@ -166,9 +166,16 @@ If the command fails, please check:
 
 **Warning:** this step is mandatory. Dokku relies on GIT projects, and control versioning also helps to restore files if we had problems with the backup plugin.
 
+From your `local machine`: 
+
+1. We will install a Dokku-friendly forked version of Gitium:
+
+        git clone git@github.com:jlcastillo/gitium.git
+        mv gitium/gitium wp-contents/plugins
+        rm -rf gitium
+
 From the wordpress dashboard (`http://yourdomain.com/wp-admin`)
 
-1. `SideMenu->Plugins->Add New->Search->"gitium"->Install->Activate`.
 
 2. In `SideMenu->Gitium`, set the URL of your repo.
 
