@@ -75,6 +75,12 @@ Visit again https://api.wordpress.org/secret-key/1.1/salt to generate new secret
 
     cp wp-config.php WordPress
 
+## Update WordPress and Gitium
+
+You'll need to do this first time. You may repeat it later if you want to restore WordPress core (in case someone found a vulnerability and hacked it), or Gitium plugin (in case you accidentally upgraded to the official plugin that at this moment is not Dokku friendly).
+
+    sh update.sh
+
 ## If creating a new WordPress
 
 In your `local machine`, download the latest WordPress code, deleting the .git folder since we won't use the official repo afterwards.
